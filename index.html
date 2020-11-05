@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Can anybody find me?</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body onload="comprobarnavegador();">
+	<header>
+		<h1> Goro Orphan</h1>
+	</header>
+
+	<section id="box" >
+		<div id="startbox" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+			<img id="p1" src="./p1.png" alt="p1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="p2" src="./p2.png" alt="p2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="p3" src="./p3.png" alt="p3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="p4" src="./p4.png" alt="p4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+		</div>
+		<div id="result">
+			<div class="cell" id="c1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="cell" id="c2" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="cell" id="c3" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="cell" id="c4" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+		</div>	
+	</section>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
